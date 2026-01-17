@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flat Cap Café Menu</title>
+
+<style>
+:root {
+  --bg: #fdfaf5; 
+  --card-bg: #ffffff;
+  --text-dark: #2c2c2c;
+  --text-muted: #7a7a7a;
+  --accent-gold: #b08d57; 
+  --accent-burgundy: #7b1e2d;
+  --shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Hoefler Text', 'Baskerville', 'Georgia', serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(rgba(176, 141, 87, 0.05), rgba(253, 250, 245, 0));
+}
+
+.logo-container {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 20px;
+  border: 3px double var(--accent-gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  box-shadow: var(--shadow);
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  text-align: center;
+  line-height: 1.2;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--text-dark);
+}
+
+header p {
+  margin: 10px 0 0;
+  color: var(--accent-burgundy);
+  font-style: italic;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+section {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 20px 20px 80px;
+}
+
+.category {
+  margin-bottom: 50px;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.category-header h2 {
+  margin: 0 20px;
+  font-size: 20px;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  white-space: nowrap;
+}
+
+.line {
+  height: 1px;
+  background: var(--accent-gold);
+  flex-grow: 1;
+  opacity: 0.3;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 12px 0;
+}
+
+.item-name {
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 10px;
+  background: var(--bg);
+  position: relative;
+  z-index: 1;
+}
+
+.item-dots {
+  flex-grow: 1;
+  border-bottom: 1px dotted #ccc;
+  margin-bottom: 5px;
+}
+
+.item-price {
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--accent-burgundy);
+  font-weight: bold;
+  padding-left: 10px;
+  background: var(--bg);
+  position: relative;
+  z-index: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 12px;
+  color: var(--text-muted);
+  background: #f4f1ec;
+  letter-spacing: 2px;
+  border-top: 1px solid #e8e4de;
+}
+
+.special {
+  color: var(--accent-burgundy);
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo-container">
+    <div class="logo-text">FLAT CAP<br>— CAFÉ —<br>EST. 1919</div>
+  </div>
+  <h1>Flat Cap Café</h1>
+  <p>Strong Coffee • Dark Spirits • Shelby Style</p>
+</header>
+
+<section>
+
+  <div class="category">
+    <div class="category-header">
+        <div class="line"></div><h2>Hot Coffee</h2><div class="line"></div>
+    </div>
+    <div class="item"><span class="item-name">Espresso</span><div class="item-dots"></div><span class="item-price">$3.50</span></div>
+    <div class="item"><span class="item-name">Americano</span><div class="item-dots"></div><span class="item-price">$4.00</span></div>
+    <div class="item"><span class="item-name">Cappuccino</span><div class="item-dots"></div><span class="item-price">$4.75</span></div>
+    <div class="item"><span class="item-name">Latte</span><div class="item-dots"></div><span class="item-price">$4.75</span></div>
+    <div class="item"><span class="item-name">Mocha</span><div class="item-dots"></div><span class="item-price">$5.25</span></div>
+    <div class="item"><span class="item-name special">Shelby Special</span><div class="item-dots"></div><span class="item-price">$6.50</span></div>
+  </div>
+
+  <div class="category">
+    <div class="category-header">
+        <div class="line"></div><h2>Iced Coffee</h2><div class="line"></div>
+    </div>
+    <div class="item"><span class="item-name">Iced Latte</span><div class="item-dots"></div><span class="item-price">$5.00</span></div>
+    <div class="item"><span class="item-name">Iced Americano</span><div class="item-dots"></div><span class="item-price">$4.25</span></div>
+    <div class="item"><span class="item-name">Cold Brew</span><div class="item-dots"></div><span class="item-price">$5.50</span></div>
+    <div class="item"><span class="item-name">Caramel Iced Coffee</span><div class="item-dots"></div><span class="item-price">$5.75</span></div>
+  </div>
+
+  <div class="category">
+    <div class="category-header">
+        <div class="line"></div><h2>Specialty</h2><div class="line"></div>
+    </div>
+    <div class="item"><span class="item-name">Irish Coffee</span><div class="item-dots"></div><span class="item-price">$9.50</span></div>
+    <div class="item"><span class="item-name">Spanish Latte</span><div class="item-dots"></div><span class="item-price">$5.50</span></div>
+    <div class="item"><span class="item-name">Chai Latte</span><div class="item-dots"></div><span class="item-price">$5.25</span></div>
+    <div class="item"><span class="item-name">Matcha Latte</span><div class="item-dots"></div><span class="item-price">$5.50</span></div>
+  </div>
+
+  <div class="category">
+    <div class="category-header">
+        <div class="line"></div><h2>Pastries</h2><div class="line"></div>
+    </div>
+    <div class="item"><span class="item-name">Butter Croissant</span><div class="item-dots"></div><span class="item-price">$4.25</span></div>
+    <div class="item"><span class="item-name">Warm Muffin</span><div class="item-dots"></div><span class="item-price">$3.75</span></div>
+    <div class="item"><span class="item-name">Dark Choc Brownie</span><div class="item-dots"></div><span class="item-price">$4.50</span></div>
+    <div class="item"><span class="item-name special">Shelby’s Scone</span><div class="item-dots"></div><span class="item-price">$5.00</span></div>
+  </div>
+
+</section>
+
+<footer>
+  BY ORDER OF THE FLAT CAP CAFÉ<br>
+  BIRMINGHAM • LONDON • EST. 1919
+</footer>
+
+</body>
+</html>
